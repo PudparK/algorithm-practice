@@ -1,0 +1,67 @@
+body {
+  margin: 0 auto;
+}
+.container {
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.box:hover {
+  top: 100px;
+  left: 100px;
+}
+
+#first {
+  background: red;
+  height: 600px;
+  margin: 0 auto;
+  position: relative;
+  width: 600px;
+  border-radius: 6px;
+}
+#second {
+  background: orange;
+  height: 500px;
+  width: 500px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#third {
+  background: yellow;
+  height: 400px;
+  width: 400px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#fourth {
+  background: green;
+  height: 300px;
+  width: 300px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#fifth {
+  background: blue;
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#sixth {
+  background: indigo;
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
