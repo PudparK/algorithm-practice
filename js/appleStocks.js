@@ -5,29 +5,30 @@
 const stockPrices = [10, 12, 7, 5, 8, 11];
 
 function getMaxProfit(prices) {
-  let high = {
+  const high = {
     price: prices[0],
-    minute: 0
+    minute: 0,
   };
-  let low = {
+  const low = {
     price: prices[0],
-    minute: 0
+    minute: prices.length,
   };
 
   for (let i = 0; i < prices.length; i++) {
-    for (let j = 0; j < prices.length; j++) {
-      if (high.price > prices[j] && j > i) {
-        high.price = prices[j];
-        high.minute = j;
-      }
-      if (low.price < prices[j] && j > i) {
-        low.price = prices[j];
-        low.minute = j;
-      }
+    if (prices[i] <= low.price) {
+      low.price = prices[i];
+      low.minute = i;
+    }
+    if (prices[i] >= high.price && high.minute <= low.minute) {
+      high.price = prices[i];
+      high.minute = i;
+    } else if (high.minute >= high.minute) {
+      high.price = prices[i];
+      high.minute = i;
     }
   }
-  console.log('high', high);
-  console.log('low', low);
+  console.log(high.price - low.price);
 }
 
+// for (let j = 0; j <= prices.length; j++) {}
 getMaxProfit(stockPrices);

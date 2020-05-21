@@ -1,8 +1,13 @@
-function sayClass(e) {
-  console.log(e);
+const parentDiv = document.getElementById("first");
+
+function getDivSize(el) {
+  return el.getBoundingClientRect();
 }
 
-let el = document.getElementById("first");
-alert(el);
+function makeFourQuadrants(height, width) {
+  // divide height
+  // divide width
+}
 
-el.addEventListener("click", sayClass);
+let parentDivSize = getDivSize(parentDiv);
+console.log("parentDivSize:", parentDivSize);

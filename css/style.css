@@ -9,11 +9,9 @@ body {
   align-items: center;
   justify-content: center;
 }
-.box:hover {
-  top: 100px;
-  left: 100px;
+.box {
+  border-radius: 6px;
 }
-
 #first {
   background: red;
   height: 600px;
@@ -64,4 +62,25 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+#second:hover {
+  top: 100px;
+  left: 100px;
+}
+#third:hover {
+  top: 100px;
+  left: 100px;
+}
+#fourth:hover {
+  top: 100px;
+  left: 100px;
+}
+#fifth:hover {
+  top: 100px;
+  left: 100px;
+}
+#sixth:hover {
+  top: 100px;
+  left: 100px;
 }
